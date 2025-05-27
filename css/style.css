@@ -1,0 +1,42 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f2f4f8;
+}
+header {
+    background: #410055;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+.capsule-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 2rem;
+}
+.capsule {
+    display: block;
+    width: 300px;
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    text-decoration: none;
+    color: #000;
+    transition: transform 0.2s;
+}
+.capsule:hover {
+    transform: translateY(-5px);
+}
+.capsule img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.capsule h3 {
+    padding: 1rem;
+    font-size: 1.1rem;
+}
