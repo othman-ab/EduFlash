@@ -3,40 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Capsules Interactives – Accueil</title>
+    <meta name="description" content="Capsules interactives pour l'apprentissage de l'algorithmique - Cours complet avec exercices pratiques">
+    <meta name="keywords" content="algorithmique, programmation, cours, capsules interactives, apprentissage, informatique">
+    <meta name="author" content="Capsules Interactives">
+    <title>Capsules Interactives – Cours d'Algorithmique</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Capsules Interactives – Cours Algorithmique</h1>
+        <div class="header-container">
+            <h1>Capsules Interactives</h1>
+            <p class="tagline">Apprenez l'algorithmique pas à pas</p>
+        </div>
+        <nav aria-label="Navigation principale">
+            <ul>
+                <li><a href="#" class="active" aria-current="page">Accueil</a></li>
+                <li><a href="#">À propos</a></li>
+                <li><a href="#">Ressources</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
     </header>
+
     <main>
-        <section class="capsule-grid">
-            <a class="capsule" href="capsules/capsule1.html">
-                <img src="../site-capsules/images/1.jpg" alt="Capsule 1">
-                <h3>Capsule 1 : Qu’est-ce qu’un algorithme ?</h3>
-            </a>
-            <a class="capsule" href="capsules/capsule2.html">
-                <img src="../site-capsules/images/2.jpg" alt="Capsule 2">
-                <h3>Capsule 2 : Lecture / Écriture</h3>
-            </a>
-            <a class="capsule" href="capsules/capsule3.html">
-                <img src="../site-capsules/images/3.jpg" alt="Capsule 3">
-                <h3>Capsule 3 : Affectation</h3>
-            </a>
-             <a class="capsule" href="capsules/capsule4.html">
-                <img src="../site-capsules/images/4.jpg" alt="Capsule 4">
-                <h3>Capsule 4 : Structure Conditionelle</h3>
-            </a>
-             <a class="capsule" href="capsules/capsule5.html">
-                <img src="../site-capsules/images/5.jpg" alt="Capsule 5">
-                <h3>Capsule 5 : Strucutre Sélective</h3>
-            </a>
-             <a class="capsule" href="capsules/capsule6.html">
-                <img src="../site-capsules/images/6.jpg" alt="Capsule 6">
-                <h3>Capsule 6 : Strucutre Itérative</h3>
-            </a>
+        <section class="hero">
+            <h2>Cours d'Algorithmique</h2>
+            <p>Découvrez les fondamentaux de l'algorithmique à travers nos capsules interactives. Chaque module vous permet d'explorer un concept clé de manière progressive et pratique.</p>
+        </section>
+
+        <section class="capsules-section">
+            <h2>Nos capsules pédagogiques</h2>
+            <div class="capsule-grid">
+                <article class="capsule" tabindex="0">
+                    <a href="capsules/capsule1.html" aria-labelledby="capsule1-title">
+                        <div class="capsule-image">
+                            <img src="images/1.jpg" alt="Illustration du concept d'algorithme" loading="lazy">
+                        </div>
+                        <div class="capsule-content">
+                            <h3 id="capsule1-title">Capsule 1 : Qu'est-ce qu'un algorithme ?</h3>
+                            <p>Introduction aux concepts fondamentaux des algorithmes et leur importance en informatique.</p>
+                            <span class="capsule-cta">Explorer</span>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="capsule" tabindex="0">
+                    <a href="capsules/capsule2.html" aria-labelledby="capsule2-title">
+                        <div class="capsule-image">
+                            <img src="images/2.jpg" alt="Illustration des opérations de lecture et écriture" loading="lazy">
+                        </div>
+                        <div class="capsule-content">
+                            <h3 id="capsule2-title">Capsule 2 : Lecture / Écriture</h3>
+                            <p>Comprendre les opérations d'entrée et de sortie dans un algorithme.</p>
+                            <span class="capsule-cta">Explorer</span>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="capsule" tabindex="0">
+                    <a href="capsules/capsule3.html" aria-labelledby="capsule3-title">
+                        <div class="capsule-image">
+                            <img src="images/3.jpg" alt="Illustration du concept d'affectation de variables" loading="lazy">
+                        </div>
+                        <div class="capsule-content">
+                            <h3 id="capsule3-title">Capsule 3 : Affectation</h3>
+                            <p>Maîtriser l'affectation de valeurs aux variables dans un algorithme.</p>
+                            <span class="capsule-cta">Explorer</span>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="capsule" tabindex="0">
+                    <a href="capsules/capsule4.html" aria-labelledby="capsule4-title">
+                        <div class="capsule-image">
+                            <img src="images/4.jpg" alt="Illustration des structures conditionnelles" loading="lazy">
+                        </div>
+                        <div class="capsule-content">
+                            <h3 id="capsule4-title">Capsule 4 : Structure Conditionnelle</h3>
+                            <p>Apprendre à créer des branches d'exécution avec les conditions SI-ALORS-SINON.</p>
+                            <span class="capsule-cta">Explorer</span>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="capsule" tabindex="0">
+                    <a href="capsules/capsule5.html" aria-labelledby="capsule5-title">
+                        <div class="capsule-image">
+                            <img src="images/5.jpg" alt="Illustration des structures sélectives" loading="lazy">
+                        </div>
+                        <div class="capsule-content">
+                            <h3 id="capsule5-title">Capsule 5 : Structure Sélective</h3>
+                            <p>Découvrir les structures de choix multiples comme SELON et SWITCH-CASE.</p>
+                            <span class="capsule-cta">Explorer</span>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="capsule" tabindex="0">
+                    <a href="capsules/capsule6.html" aria-labelledby="capsule6-title">
+                        <div class="capsule-image">
+                            <img src="images/6.jpg" alt="Illustration des structures itératives" loading="lazy">
+                        </div>
+                        <div class="capsule-content">
+                            <h3 id="capsule6-title">Capsule 6 : Structure Itérative</h3>
+                            <p>Maîtriser les boucles et les répétitions dans les algorithmes.</p>
+                            <span class="capsule-cta">Explorer</span>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h2>Prêt à approfondir vos connaissances ?</h2>
+            <p>Explorez nos capsules interactives et maîtrisez les fondamentaux de l'algorithmique.</p>
+            <a href="#" class="btn-primary">Voir toutes les ressources</a>
         </section>
     </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Capsules Interactives</h4>
+                <p>Une approche moderne pour l'apprentissage de l'algorithmique et de la programmation.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Navigation rapide</h4>
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">À propos</a></li>
+                    <li><a href="#">Ressources</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <address>
+                    <p>Email: <a href="mailto:contact@capsules-interactives.fr">contact@capsules-interactives.fr</a></p>
+                </address>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Capsules Interactives. Tous droits réservés.</p>
+        </div>
+    </footer>
 </body>
 </html>
