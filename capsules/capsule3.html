@@ -2,20 +2,95 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Capsule 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduFlash - Capsule 3 : Affectation</title>
+    <link rel="stylesheet" href="../css/capsules.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h2>Capsule 3 : Affectation</h2>
-
-    <iframe src="https://app.lumi.education/api/v1/run/isItjc/embed"
-            width="1088"
-            height="720"
-            frameborder="0"
-            allowfullscreen="allowfullscreen"
-            allow="geolocation *; microphone *; camera *; midi *; encrypted-media *">
-    </iframe>
+    <!-- Barre de menu -->
+    <nav>
+        <div class="nav-container">
+            <a href="../index.html" class="logo">
+                EduFlash
+            </a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="#" class="active">Capsules</a></li>
+                <li><a href="#">Ressources</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Contenu principal -->
+    <div class="container">
+        <h1>Capsule 3 : Affectation</h1>
+        
+        <!-- Outils vidéo -->
+        <div class="video-tools">
+            <button class="tool-button" aria-label="Activer le mode plein écran">
+                <span class="icon">⛶</span> Plein écran
+            </button>
+            <button class="tool-button" aria-label="Télécharger les notes de cours">
+                <span class="icon">📥</span> Notes de cours
+            </button>
+        </div>
+        
+        <!-- Conteneur vidéo -->
+        <div class="video-container">
+            <div class="video-wrapper">
+                <iframe src="https://app.lumi.education/api/v1/run/DoCpS3/embed"
+                        title="Capsule 3 : Affectation"
+                        allowfullscreen="allowfullscreen"
+                        allow="geolocation *; microphone *; camera *; midi *; encrypted-media *">
+                </iframe>
+            </div>
+        </div>
+        
+        <!-- Description -->
+        <div class="description">
+            <h2>À propos de cette capsule</h2>
+            <p>Cette capsule vous explique le concept d'affectation dans un algorithme. Vous découvrirez comment attribuer des valeurs à des variables et comment manipuler ces valeurs au cours de l'exécution d'un algorithme.</p>
+            
+            <p>L'affectation est une opération fondamentale qui permet de stocker des données dans la mémoire et de les réutiliser tout au long de l'algorithme. Elle constitue la base de la manipulation des données dans tout programme informatique.</p>
+            
+            <p>Cette capsule vous permettra de comprendre comment déclarer des variables, leur attribuer des valeurs et les modifier au fil de l'exécution de votre algorithme.</p>
+        </div>
+        
+        <!-- Navigation entre capsules -->
+        <div class="capsule-navigation">
+            <a href="capsule2.html" class="nav-button">
+                <span class="icon prev">←</span> Capsule précédente
+            </a>
+            <a href="capsule4.html" class="nav-button">
+                Capsule suivante <span class="icon next">→</span>
+            </a>
+        </div>
+    </div>
+    
     <script src="https://app.lumi.education/api/v1/h5p/core/js/h5p-resizer.js" charset="UTF-8"></script>
-
-    <p><a href="../index.html">← Retour à l'accueil</a></p>
+    <script>
+        // Script pour les fonctionnalités interactives
+        document.addEventListener('DOMContentLoaded', function() {
+            // Gestion du bouton plein écran
+            const fullscreenButton = document.querySelector('.tool-button[aria-label="Activer le mode plein écran"]');
+            const videoIframe = document.querySelector('.video-wrapper iframe');
+            
+            if (fullscreenButton && videoIframe) {
+                fullscreenButton.addEventListener('click', function() {
+                    if (videoIframe.requestFullscreen) {
+                        videoIframe.requestFullscreen();
+                    } else if (videoIframe.webkitRequestFullscreen) {
+                        videoIframe.webkitRequestFullscreen();
+                    } else if (videoIframe.msRequestFullscreen) {
+                        videoIframe.msRequestFullscreen();
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 </html>
